@@ -1,0 +1,15 @@
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\bin\Debug\BankDeposits.exe.config
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\bin\Debug\BankDeposits.exe
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\bin\Debug\BankDeposits.pdb
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.csproj.AssemblyReference.cache
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.Base.BaseForm.resources
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.Components.LoginControl.resources
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.Components.RegisterForm.resources
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Properties.Resources.resources
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.csproj.GenerateResource.cache
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.exe
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.pdb
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.Components.MainControl.resources
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.Components.DepositInfo.resources
