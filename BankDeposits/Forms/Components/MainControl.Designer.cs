@@ -74,18 +74,18 @@
             // TypeComboBox
             // 
             this.TypeComboBox.FormattingEnabled = true;
-            this.TypeComboBox.Location = new System.Drawing.Point(51, 244);
+            this.TypeComboBox.Location = new System.Drawing.Point(87, 195);
             this.TypeComboBox.Name = "TypeComboBox";
             this.TypeComboBox.Size = new System.Drawing.Size(340, 21);
             this.TypeComboBox.TabIndex = 4;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(51, 192);
+            this.button2.Location = new System.Drawing.Point(87, 238);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(340, 23);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Посмотреть информацию по вкладам";
+            this.button2.Text = "Создать вклад";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // MainControl

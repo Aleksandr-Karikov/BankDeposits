@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace BankDeposits.Forms.Components
 {
-    public partial class MainControl : UserControl
+    public partial class ManagerControl : UserControl
     {
-        public MainControl(User user)
+        public ManagerControl(User user)
         {
             InitializeComponent();
         }

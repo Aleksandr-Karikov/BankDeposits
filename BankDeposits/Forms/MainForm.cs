@@ -16,6 +16,8 @@ namespace BankDeposits.Forms
     {
         public UserControl LoginControl = new LoginControl();
         public UserControl RegisterControl = new RegisterForm();
+        public UserControl MainControl;
+        public UserControl ManagerControl;
         public MainForm()
         {
             InitializeComponent();

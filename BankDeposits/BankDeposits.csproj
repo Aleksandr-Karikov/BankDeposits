@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,11 +53,29 @@
     <Compile Include="Forms\Base\BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Components\Client.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Components\Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Components\DepositInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\Components\DepositInfo.Designer.cs">
       <DependentUpon>DepositInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Components\DepositTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Components\DepositTask.Designer.cs">
+      <DependentUpon>DepositTask.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Components\LoginControl.cs">
       <SubType>UserControl</SubType>
@@ -70,6 +89,12 @@
     <Compile Include="Forms\Components\MainControl.Designer.cs">
       <DependentUpon>MainControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Components\ManagerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Components\ManagerControl.Designer.cs">
+      <DependentUpon>ManagerControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Components\RegisterForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -82,20 +107,36 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Deposit.cs" />
     <Compile Include="Models\DepositType.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\AuthService.cs" />
+    <Compile Include="Utils\DataBaseHelper.cs" />
     <EmbeddedResource Include="Forms\Base\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Components\Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Components\DepositInfo.resx">
       <DependentUpon>DepositInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Components\DepositTask.resx">
+      <DependentUpon>DepositTask.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Components\LoginControl.resx">
       <DependentUpon>LoginControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Components\MainControl.resx">
       <DependentUpon>MainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Components\ManagerControl.resx">
+      <DependentUpon>ManagerControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Components\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
@@ -126,8 +167,6 @@
     <Content Include="Static\icons\bank %281%29.png" />
     <Content Include="Static\icons\bank.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utils\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

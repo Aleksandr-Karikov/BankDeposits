@@ -1,5 +1,4 @@
-﻿using BankDeposits.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BankDeposits.Forms.Components
 {
-    public partial class MainControl : UserControl
+    public partial class DepositTask : UserControl
     {
-        public MainControl(User user)
+        public DepositTask()
         {
             InitializeComponent();
         }

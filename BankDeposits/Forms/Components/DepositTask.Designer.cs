@@ -1,6 +1,7 @@
-﻿namespace BankDeposits.Forms.Components
+﻿
+namespace BankDeposits.Forms.Components
 {
-    partial class DepositInfo
+    partial class DepositTask
     {
         /// <summary> 
         /// Обязательная переменная конструктора.
@@ -30,12 +31,12 @@
         {
             this.SuspendLayout();
             // 
-            // DepositInfo
+            // DepositTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "DepositInfo";
-            this.Size = new System.Drawing.Size(485, 339);
+            this.Name = "DepositTask";
+            this.Size = new System.Drawing.Size(345, 150);
             this.ResumeLayout(false);
 
         }
