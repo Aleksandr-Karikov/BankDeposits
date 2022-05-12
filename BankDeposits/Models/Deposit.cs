@@ -12,8 +12,12 @@ namespace BankDeposits.Models
         public int? TypeID {get;set;}
 
         public int? UserID { get; set; }
-        public int? Balance { get; set; }
-        public int? CUrrencyID { get; set; }
+        public Decimal? StartBalance { get; set; }
+        public Decimal? CurrentBalance { get; set; }
+        public int? CurrencyID { get; set; }
         public bool isConfirmed { get; set; }
+        public DateTime DateCreate { get; set; }
+        public bool IsDeleted { get; set; }
+
     }
 }

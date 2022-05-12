@@ -44,6 +44,7 @@ namespace BankDeposits.Forms.Components
                 Role = "Клиент",
                 Phone = NumberTextBox.Text,
                 Password = passwordTextBox.Text,
+                IsDeleted = false,
             };
             if (AuthService.TryRegister(user))
             {

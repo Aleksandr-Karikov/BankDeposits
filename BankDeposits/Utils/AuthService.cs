@@ -27,16 +27,22 @@ namespace BankDeposits.Utils
             var _user = GetUserByNumberXPassword(number, password); 
             if (_user != null)
             {
-                if (_user.IsConfirmed)
-                {
-                    return _user;
-                } else
+                if (!_user.IsConfirmed)
                 {
                     MessageBox.Show("Аккаунт не подтвержден менеджером");
+                    return null;
+                } else if (_user.IsDeleted){
+                    MessageBox.Show("Аккаунт удален менеджером");
+                    return null;
+                } else
+                {
+                    return _user;
                 }
+                
             }
-            MessageBox.Show("Данные не подтверждены");
+            MessageBox.Show("Неправильная комбинация логина и пароля");
             return null;
         }
+
     }
 }

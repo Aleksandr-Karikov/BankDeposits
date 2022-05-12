@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\BalanceManipulate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BalanceManipulate.Designer.cs">
+      <DependentUpon>BalanceManipulate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Base\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,17 +71,11 @@
     <Compile Include="Forms\Components\Client.Designer.cs">
       <DependentUpon>Client.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Components\DepositInfo.cs">
+    <Compile Include="Forms\Components\DepositControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Components\DepositInfo.Designer.cs">
-      <DependentUpon>DepositInfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Components\DepositTask.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Components\DepositTask.Designer.cs">
-      <DependentUpon>DepositTask.cs</DependentUpon>
+    <Compile Include="Forms\Components\DepositControl.Designer.cs">
+      <DependentUpon>DepositControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Components\LoginControl.cs">
       <SubType>UserControl</SubType>
@@ -95,11 +95,23 @@
     <Compile Include="Forms\Components\ManagerControl.Designer.cs">
       <DependentUpon>ManagerControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Components\ManagerDeposit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Components\ManagerDeposit.Designer.cs">
+      <DependentUpon>ManagerDeposit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Components\RegisterForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\Components\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CreateDepositForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CreateDepositForm.Designer.cs">
+      <DependentUpon>CreateDepositForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
@@ -114,6 +126,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\AuthService.cs" />
     <Compile Include="Utils\DataBaseHelper.cs" />
+    <Compile Include="_907b1_Karikov_ASDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_907b1_Karikov_ASDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\BalanceManipulate.resx">
+      <DependentUpon>BalanceManipulate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Base\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,11 +143,8 @@
     <EmbeddedResource Include="Forms\Components\Client.resx">
       <DependentUpon>Client.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Components\DepositInfo.resx">
-      <DependentUpon>DepositInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Components\DepositTask.resx">
-      <DependentUpon>DepositTask.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Components\DepositControl.resx">
+      <DependentUpon>DepositControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Components\LoginControl.resx">
       <DependentUpon>LoginControl.cs</DependentUpon>
@@ -138,8 +155,14 @@
     <EmbeddedResource Include="Forms\Components\ManagerControl.resx">
       <DependentUpon>ManagerControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Components\ManagerDeposit.resx">
+      <DependentUpon>ManagerDeposit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Components\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateDepositForm.resx">
+      <DependentUpon>CreateDepositForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -159,6 +182,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_907b1_Karikov_ASDataSet.xsc">
+      <DependentUpon>_907b1_Karikov_ASDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_907b1_Karikov_ASDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_907b1_Karikov_ASDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_907b1_Karikov_ASDataSet.xss">
+      <DependentUpon>_907b1_Karikov_ASDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

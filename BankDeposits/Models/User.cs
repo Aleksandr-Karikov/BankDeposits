@@ -20,6 +20,7 @@ namespace BankDeposits.Models
         public string SeriesPassport { get; set; }
         public string PassportNumber { get; set; }
         public bool IsConfirmed { get; set; }
+        public bool IsDeleted { get; set; }
         public int? ManageID { get; set; }
         public string Password { get; set; }
     }

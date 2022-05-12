@@ -11,8 +11,11 @@ C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits
 C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.exe
 C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.pdb
 C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.Components.MainControl.resources
-C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.Components.DepositInfo.resources
 C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.ClientForm.resources
 C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.Components.Client.resources
-C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.Components.DepositTask.resources
 C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.Components.ManagerControl.resources
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.Components.DepositControl.resources
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.CreateDepositForm.resources
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.Components.ManagerDeposit.resources
+C:\Users\Aleksandr\source\repos\BankDeposits\BankDeposits\obj\Debug\BankDeposits.Forms.BalanceManipulate.resources

@@ -30,13 +30,18 @@ namespace BankDeposits.Forms
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.fio = new System.Windows.Forms.Label();
+            this.Email = new System.Windows.Forms.Label();
+            this.birthday = new System.Windows.Forms.Label();
+            this.Phone = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.ФИО = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Balance = new System.Windows.Forms.Label();
+            this.Баланас = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // button1
@@ -47,42 +52,43 @@ namespace BankDeposits.Forms
             this.button1.TabIndex = 0;
             this.button1.Text = "Подтвердить аккаунт";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // fio
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(90, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.fio.AutoSize = true;
+            this.fio.Location = new System.Drawing.Point(128, 47);
+            this.fio.Name = "fio";
+            this.fio.Size = new System.Drawing.Size(35, 13);
+            this.fio.TabIndex = 1;
+            this.fio.Text = "label1";
             // 
-            // label2
+            // Email
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(90, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.Email.AutoSize = true;
+            this.Email.Location = new System.Drawing.Point(128, 70);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(35, 13);
+            this.Email.TabIndex = 2;
+            this.Email.Text = "label2";
             // 
-            // label3
+            // birthday
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(90, 96);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.birthday.AutoSize = true;
+            this.birthday.Location = new System.Drawing.Point(128, 96);
+            this.birthday.Name = "birthday";
+            this.birthday.Size = new System.Drawing.Size(35, 13);
+            this.birthday.TabIndex = 3;
+            this.birthday.Text = "label3";
             // 
-            // label4
+            // Phone
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(90, 123);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.Phone.AutoSize = true;
+            this.Phone.Location = new System.Drawing.Point(128, 123);
+            this.Phone.Name = "Phone";
+            this.Phone.Size = new System.Drawing.Size(35, 13);
+            this.Phone.TabIndex = 4;
+            this.Phone.Text = "label4";
             // 
             // button2
             // 
@@ -92,30 +98,91 @@ namespace BankDeposits.Forms
             this.button2.TabIndex = 5;
             this.button2.Text = "Подтвердить все заявки";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // dataGridView1
+            // ФИО
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(213, 18);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 6;
+            this.ФИО.AutoSize = true;
+            this.ФИО.Location = new System.Drawing.Point(13, 47);
+            this.ФИО.Name = "ФИО";
+            this.ФИО.Size = new System.Drawing.Size(34, 13);
+            this.ФИО.TabIndex = 7;
+            this.ФИО.Text = "ФИО";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Email";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 96);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Дата рождения";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 123);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Номер телефона";
+            // 
+            // Balance
+            // 
+            this.Balance.AutoSize = true;
+            this.Balance.Location = new System.Drawing.Point(128, 155);
+            this.Balance.Name = "Balance";
+            this.Balance.Size = new System.Drawing.Size(35, 13);
+            this.Balance.TabIndex = 11;
+            this.Balance.Text = "label4";
+            // 
+            // Баланас
+            // 
+            this.Баланас.AutoSize = true;
+            this.Баланас.Location = new System.Drawing.Point(13, 155);
+            this.Баланас.Name = "Баланас";
+            this.Баланас.Size = new System.Drawing.Size(44, 13);
+            this.Баланас.TabIndex = 12;
+            this.Баланас.Text = "Баланс";
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Location = new System.Drawing.Point(235, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(376, 151);
+            this.panel1.TabIndex = 13;
             // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 293);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(643, 293);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Баланас);
+            this.Controls.Add(this.Balance);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.ФИО);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Phone);
+            this.Controls.Add(this.birthday);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.fio);
             this.Controls.Add(this.button1);
             this.Name = "ClientForm";
             this.Text = "ClientForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,11 +191,17 @@ namespace BankDeposits.Forms
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label fio;
+        private System.Windows.Forms.Label Email;
+        private System.Windows.Forms.Label birthday;
+        private System.Windows.Forms.Label Phone;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label ФИО;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label Balance;
+        private System.Windows.Forms.Label Баланас;
+        private System.Windows.Forms.Panel panel1;
     }
 }
